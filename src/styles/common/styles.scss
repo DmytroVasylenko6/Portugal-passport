@@ -1,0 +1,962 @@
+.main {
+  &__services {
+    font-family: "Assistant";
+    background-image: url(../assets/images/bg-main-services.png);
+    padding-bottom: 100px;
+  }
+  &__help {
+    font-family: "Assistant";
+    background: #e5e5e5;
+    padding-bottom: 30px;
+  }
+  &__law {
+    font-family: "Rubik";
+    background: #e5e5e5;
+    padding-bottom: 80px;
+  }
+}
+.button {
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+  & a {
+    color: #fff;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.button:hover::before,
+.button:focus::before {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+.button:active::after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+.userIdentificationContainer {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 100;
+  border-radius: 8px;
+
+  background-color: #ffffff;
+
+  @media screen and (max-width: 480px) {
+    padding-top: 28px;
+    padding-right: 35px;
+    padding-left: 25px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 990px) {
+    max-width: 680px;
+    padding-top: 28px;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media screen and (min-width: 990px) and (max-width: 1440px) {
+    max-width: 1350px;
+    padding-top: 28px;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1264px;
+    width: 100%;
+    padding-top: 28px;
+    padding-right: 68px;
+    padding-left: 68px;
+    padding-bottom: 40px;
+  }
+}
+.positionInServices {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 100;
+  border-radius: 8px;
+
+  background-color: #ffffff;
+
+  @media screen and (max-width: 480px) {
+    padding-top: 28px;
+    padding-right: 35px;
+    padding-left: 25px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 990px) {
+    max-width: 680px;
+    padding-top: 28px;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media screen and (min-width: 990px) and (max-width: 1440px) {
+    max-width: 1350px;
+    padding-top: 28px;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1264px;
+    width: 100%;
+    padding-top: 28px;
+    padding-right: 68px;
+    padding-left: 68px;
+    padding-bottom: 40px;
+  }
+}
+.positionInLaw {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 100;
+  border-radius: 8px;
+
+  background-color: #ffffff;
+
+  @media screen and (max-width: 480px) {
+    padding-top: 28px;
+    padding-right: 35px;
+    padding-left: 25px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 990px) {
+    max-width: 680px;
+    padding-top: 28px;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media screen and (min-width: 990px) and (max-width: 1440px) {
+    max-width: 1350px;
+    padding-top: 28px;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1264px;
+    width: 100%;
+    padding-top: 28px;
+    padding-right: 68px;
+    padding-left: 68px;
+    padding-bottom: 40px;
+  }
+}
+.positionInFaq {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 100;
+  border-radius: 8px;
+
+  background-color: #ffffff;
+
+  @media screen and (max-width: 480px) {
+    padding-top: 28px;
+    padding-right: 35px;
+    padding-left: 25px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 990px) {
+    max-width: 680px;
+    padding-top: 28px;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media screen and (min-width: 990px) and (max-width: 1440px) {
+    max-width: 1350px;
+    padding-top: 28px;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1264px;
+    width: 100%;
+    padding-top: 28px;
+    padding-right: 68px;
+    padding-left: 68px;
+    padding-bottom: 40px;
+  }
+}
+
+.positionInHeroTitle {
+  @media screen and (min-width: 990px) {
+    z-index: 20;
+  }
+
+  @media screen and (min-width: 1440px) {
+    top: -65%;
+  }
+}
+
+.userIdTitle {
+  font-family: Assistant;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 49px;
+
+  text-align: center;
+
+  color: rgba(24, 108, 186, 0.95);
+
+  @media screen and (max-width: 990px) {
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: 990px) {
+    font-size: 36px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 42px;
+  }
+}
+
+.userIdText {
+  font-family: Assistant;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 31px;
+
+  text-align: center;
+
+  color: rgba(88, 88, 88, 0.75);
+}
+
+.userIdForm {
+  @media screen and (max-width: 990px) {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: 990px) {
+    display: flex;
+    align-items: center;
+    margin-top: 39px;
+    text-align: center;
+    height: 70px;
+  }
+}
+
+.userIdButton {
+  width: 230px;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  font-family: Rubik;
+  font-style: normal;
+  line-height: 20px;
+  text-align: center;
+
+  background: linear-gradient(133.08deg, #3b8edc 24.16%, #0f58ae 75.84%);
+  border-radius: 8px;
+  color: #ffffff;
+
+  @media screen and (max-width: 990px) {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 17.5px 30px;
+    font-weight: bold;
+  }
+
+  @media screen and (min-width: 990px) {
+    padding: 17.5px 30px;
+    margin-right: 20px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-right: 100px;
+  }
+}
+
+.checkboxContainer {
+  @media screen and (max-width: 990px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 990px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100%;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-right: 69px;
+  }
+}
+
+.checkbox {
+  display: flex;
+  text-align: center;
+
+  @media screen and (min-width: 990px) {
+    margin-top: 45px;
+  }
+}
+
+.checkbox .label {
+  display: block;
+
+  font-family: Assistant;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: #000000;
+}
+
+.checkbox .label:first-child {
+  margin-right: 20px;
+}
+
+.formChoice {
+  align-self: flex-start;
+  position: relative;
+  height: 100%;
+
+  @media screen and (max-width: 990px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 990px) {
+    margin-right: 20px;
+    width: 242px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-right: 39px;
+  }
+}
+.formChoice {
+  height: auto;
+  align-self: flex-start;
+}
+@media screen and (max-width: 990px) {
+  .checkboxContainer {
+    margin-top: 25px;
+  }
+  .formChoice {
+    width: 100%;
+  }
+  .menu-container {
+    z-index: 101;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+  }
+  .backdrop.is-open {
+    z-index: 999;
+  }
+  .header.services,
+  .header.help,
+  .header.law,
+  .header.contact,
+  .header.about {
+    z-index: unset;
+  }
+  .mainContainer {
+    width: 100%;
+  }
+  .articleItem {
+    width: 80%;
+    margin: auto;
+  }
+  .articleItem:focus,
+  .articleItem:hover {
+    transform: unset;
+  }
+  .law-center .item {
+    width: 85%;
+  }
+  .law-down .container .content img,
+  .articleSection {
+    width: 90%;
+  }
+}
+.userIdentificationContainer {
+  z-index: 3;
+}
+.checkbox {
+  margin-top: 0;
+  justify-content: space-around;
+
+  @media screen and (min-width: 990px) {
+    width: 100%;
+  }
+
+  & .radio-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &.margin {
+      display: block;
+      margin-right: 10px;
+    }
+
+    & label {
+      display: block;
+      margin-right: 5px;
+    }
+
+    &:first-child {
+      @media screen and (max-width: 989px) {
+        margin-right: 18px;
+      }
+    }
+  }
+}
+label,
+option,
+select,
+.select-options li,
+.select-options,
+.select-styled {
+  font-family: Assistant;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
+}
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+}
+.select-styled {
+  position: absolute;
+
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 8px 15px;
+  height: 16px;
+  border-bottom: 1px solid #77777180;
+  text-align: right;
+
+  @media screen and (min-width: 990px) {
+    top: -22px;
+  }
+}
+.select-styled:after {
+  content: "";
+  background-image: url("https://coelix-development.com/passport/arrow-down.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: unset;
+  width: 13px;
+  height: 8px;
+  left: 16px;
+  position: absolute;
+  top: 12px;
+  transition: 0.5s;
+}
+.select-styled.active:after {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+.select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 200px;
+  overflow-y: scroll;
+  background: white;
+  top: 33px;
+}
+.select-options li {
+  margin: 0;
+  padding: 12px 0;
+  text-indent: 15px;
+}
+.select-options li[rel="hide"] {
+  display: none;
+}
+
+.formChoiseBtn {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+  padding: 15px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.formLastName {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100%;
+
+  @media screen and (max-width: 990px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 990px) {
+    margin-right: 10px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-right: 17px;
+  }
+}
+
+.formName {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  @media screen and (max-width: 990px) {
+    margin-bottom: 20px;
+  }
+}
+
+.formText {
+  font-family: Assistant;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  color: #777771;
+
+  @media screen and (max-width: 989px) {
+    margin-right: 20px;
+  }
+}
+
+.formInput {
+  padding-right: 10px;
+
+  font-family: Assistant;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-align: right;
+
+  color: #000000;
+  opacity: 0.5;
+  border: 0;
+  border-bottom: 1px solid #777771;
+  outline: none;
+}
+
+.starIcon::before {
+  position: relative;
+  bottom: -3px;
+  content: "*";
+
+  width: 20px;
+  margin-right: 10px;
+  color: #e04562;
+}
+
+.userIdentificationContainer {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 20;
+
+  background-color: #ffffff;
+
+  @media screen and (max-width: 480px) {
+    padding-top: 28px;
+    padding-right: 35px;
+    padding-left: 25px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 990px) {
+    max-width: 680px;
+    padding-top: 28px;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media screen and (min-width: 990px) and (max-width: 1440px) {
+    max-width: 1350px;
+    padding-top: 28px;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1410px;
+    padding-top: 28px;
+    padding-right: 68px;
+    padding-left: 68px;
+    padding-bottom: 40px;
+  }
+}
+
+.positionInHeroTitle {
+  @media screen and (min-width: 990px) {
+    position: absolute;
+    top: -65%;
+    left: 50%;
+    z-index: 20;
+    transform: translate(-50%);
+  }
+
+  @media screen and (min-width: 1440px) {
+    top: -65%;
+  }
+}
+
+.userIdTitle {
+  font-family: Assistant;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 49px;
+
+  text-align: center;
+
+  color: rgba(24, 108, 186, 0.95);
+
+  @media screen and (max-width: 990px) {
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: 990px) {
+    font-size: 36px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 42px;
+  }
+}
+
+.userIdText {
+  font-family: Assistant;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 31px;
+
+  text-align: center;
+
+  color: rgba(88, 88, 88, 0.75);
+}
+
+.userIdForm {
+  @media screen and (max-width: 990px) {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: 990px) {
+    display: flex;
+    align-items: center;
+    margin-top: 39px;
+    text-align: center;
+    height: 70px;
+    margin-bottom: 5px;
+  }
+}
+
+.userIdButton {
+  position: relative;
+  z-index: 1;
+  width: 230px;
+
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  font-family: Rubik;
+  font-style: normal;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5 linear;
+  background: linear-gradient(133.08deg, #3b8edc 24.16%, #0f58ae 75.84%);
+  border-radius: 8px;
+  color: #ffffff;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    border-radius: 8px;
+    background: linear-gradient(133.08deg, #439ff3 24.16%, #1066cb 75.84%);
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: linear-gradient(133.08deg, #3789d5 24.16%, #0c4f9d 75.84%);
+    border-radius: 8px;
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+
+  @media screen and (max-width: 990px) {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 17.5px 30px;
+    font-weight: bold;
+  }
+
+  @media screen and (min-width: 990px) {
+    padding: 17.5px 30px;
+    margin-right: 20px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-right: 100px;
+  }
+}
+
+.checkboxContainer {
+  @media screen and (max-width: 990px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 990px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100%;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-right: 69px;
+  }
+}
+
+.checkbox {
+  display: flex;
+  text-align: center;
+
+  @media screen and (min-width: 990px) and (max-width: 1439px) {
+    margin-top: 15px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-top: 45px;
+  }
+}
+
+.checkbox .label {
+  display: block;
+
+  font-family: Assistant;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: #000000;
+}
+
+.checkbox .label:first-child {
+  margin-right: 20px;
+}
+
+.formChoice {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100%;
+
+  @media screen and (max-width: 990px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 990px) {
+    margin-right: 20px;
+    width: 242px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-right: 39px;
+  }
+}
+
+.formChoiseBtn {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+
+  margin: 0;
+  padding: 15px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.formLastName {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100%;
+
+  @media screen and (max-width: 990px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 990px) {
+    margin-right: 10px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-right: 17px;
+  }
+}
+
+.formName {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  @media screen and (max-width: 990px) {
+    margin-bottom: 20px;
+  }
+}
+
+.formText {
+  font-family: Assistant;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-align: right;
+
+  color: #777771;
+}
+
+.formInput {
+  padding-right: 10px;
+  font-family: Assistant;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-align: right;
+
+  color: #000000;
+  opacity: 0.5;
+  border: 0;
+  border-bottom: 1px solid #777771;
+  outline: none;
+
+  @media screen and (min-width: 990px) {
+    margin-top: 37px;
+  }
+}
+
+.starIcon::before {
+  position: relative;
+  bottom: -3px;
+  content: "*";
+
+  width: 20px;
+  margin-right: 10px;
+  color: #e04562;
+}
+
+#contactChoise2 {
+  display: block;
+  margin-right: 10px;
+}

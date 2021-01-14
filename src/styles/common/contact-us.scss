@@ -1,0 +1,230 @@
+.contactSection {
+  padding-top: 55px;
+}
+
+.contactContainer {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 30px;
+
+  @media screen and (min-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 1439px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1410px;
+  }
+
+  & .contactItem {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    background: #ffffff;
+    box-shadow: 0px 22px 106px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+
+    padding-top: 22px;
+    padding-bottom: 14px;
+    padding-left: 15px;
+    padding-right: 100px;
+
+    transition: 0.6s ease-out;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+      
+    }
+
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        margin-right: 30px;
+      }
+    }
+
+    &:nth-child(odd) {
+      @media screen and (min-width: 767px) and (max-width: 1199px) {
+        margin-right: 60px;
+      }
+    }
+
+    &:nth-child(-n + 2) {
+      @media screen and (min-width: 480px) and (max-width: 1199px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 2 * 200px) / 2);
+    }
+
+    @media screen and (min-width: 1199px) {
+      width: calc((100% - 3 * 200px) / 4);
+    }
+  }
+}
+
+// @media screen and (min-width: 480px) {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+// }
+// @media screen and (max-width: 1440px) {
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   flex-wrap: nowrap;
+// }
+// @media screen and (max-width: 1340px) {
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   flex-wrap: wrap;
+// }
+
+// @media screen and (min-width: 1440px) {
+//   width: 1410px;
+//   flex-wrap: nowrap;
+// }
+
+//   & .contactItem {
+//     font-family: "Rubik";
+//     position: relative;
+//     z-index: 0;
+//     display: flex;
+//     justify-content: flex-end;
+//     align-items: center;
+
+//     background: #ffffff;
+//     box-shadow: 0px 22px 106px rgba(0, 0, 0, 0.06);
+//     border-radius: 8px;
+
+//     padding: 21px 100px 21px 15px;
+
+//     cursor: pointer;
+//     transition: all 0.5s ease-out;
+
+//     &:hover,
+//     &:focus {
+//       transition: all 0.5s ease-out;
+//       transform: scale(1.1);
+//     }
+
+//     &:not(:last-child) {
+//       @media screen and (max-width: 480px) {
+//         margin-bottom: 20px;
+//       }
+
+//       @media screen and (min-width: 990px) {
+//         margin-right: 30px;
+//       }
+//     }
+
+//     &:nth-child(odd) {
+//       @media screen and (min-width: 480px) and (max-width: 990px) {
+//         margin-right: 60px;
+//       }
+//     }
+
+//     &:nth-child(-n + 2) {
+//       @media screen and (min-width: 480px) and (max-width: 990px) {
+//         margin-bottom: 30px;
+//       }
+//     }
+
+//     @media screen and (min-width: 480px) {
+//       width: calc((100% - 2 * 30px) / 2);
+//     }
+
+//     @media screen and (min-width: 990px) {
+//       width: calc((100% - 3 * 30px) / 4);
+//     }
+//   }
+// }
+
+.workItem:hover,
+.workItem:focus {
+  transform: scale(1.1);
+  transition: all 0.5s ease-out;
+}
+
+.contactText {
+  width: 95%;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  text-align: right;
+
+  color: #000000;
+
+  &.icon.message::before {
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    transform: translate(-40%);
+    right: 27px;
+    content: "";
+    width: 29px;
+    height: 24px;
+
+    background: url(../assets/svg/message-icon.svg) center center no-repeat;
+    background-size: cover;
+  }
+
+  &.icon.tell::before {
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    transform: translate(-40%);
+    right: 27px;
+    content: "";
+    width: 29px;
+    height: 24px;
+
+    background: url(../assets/svg/house-icon.svg) center center no-repeat;
+    background-size: cover;
+  }
+
+  &.icon.house::before {
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    transform: translate(-40%);
+    right: 27px;
+    content: "";
+    width: 29px;
+    height: 24px;
+
+    background: url(../assets/svg/call-icon.svg) center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.contactItem:hover,
+.contactItem:focus {
+  transform: scale(1.1);
+  background: linear-gradient(133.08deg, #3b8edc 24.16%, #0f58ae 75.84%);
+  color: #ffffff;
+}
+
+.contactItem:hover .contactText,
+.contactItem:focus .contactText {
+  color: #ffffff;
+}
